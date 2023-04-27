@@ -1,0 +1,28 @@
+.header {
+  max-width: 100wh;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #37435c !important;
+}
+.nav {
+  justify-self: self-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nav-link {
+  margin-right: 15px;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+img{
+  width:200px;
+}
