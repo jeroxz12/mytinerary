@@ -25,9 +25,9 @@ const Footer = () => {
             />
           </div>
           <div className="footer-nav text-center py-3">
-            <a href={"#hero"} className="footer_nav_link">
+          <Link to={"/home"} className="footer_nav_link">
               Home
-            </a>
+            </Link>
             <Link to={"/cities"} className="footer_nav_link">
               Explore Cities
             </Link>
