@@ -25,7 +25,7 @@ const Home = () => {
         />
       </div>
       <div className="container mt-5 mb-5">
-        <Carrousel/>
+        <Carrousel />
       </div>
     </>
   );

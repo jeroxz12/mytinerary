@@ -1,7 +1,7 @@
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
-import Home from "./pages/Home/Home.js";
-import Cities from "./pages/Cities/Cities.js";
+import Home from "./pages/Home/Home.jsx";
+import Cities from "./pages/Cities/Cities.jsx";
 import Footer from "./components/Footer";
 import Hotels from "./pages/Hotels/Hotels";
 

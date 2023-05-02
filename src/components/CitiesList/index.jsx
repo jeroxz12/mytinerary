@@ -3,18 +3,19 @@ import axios from "axios";
 import City from "../City";
 
 const CitiesList = () => {
-
-
+  const getData = () => {
+    return axios.get('http://localhost:3001/api/cities/all').then((response) => setCities(response.data.cities));
+  }
   let [cities, setCities] = useState([]);
-
   useEffect( () => {
-      axios.get('http://localhost:3001/api/cities/all').then((response) => setCities(response.data.cities));
+      getData();
   }, []);
-  console.log(cities);
-
-  return <div>
-      
-    </div>;
+  return <div className="container">
+    <div className="row d-flex flex-lg-row  justify-content-around mb-3">
+     { cities.map((citie) => {
+        return <City key={citie._id} name = {citie.name} imageUrl = {citie.imageUrl} country = {citie.countryName} />
+      })}
+    </div>
+  </div> ;
 };
-
 export default CitiesList;
