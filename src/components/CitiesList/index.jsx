@@ -12,8 +12,8 @@ const CitiesList = () => {
   }, []);
   return <div className="container">
     <div className="row d-flex flex-lg-row  justify-content-around mb-3">
-     { cities.map((citie) => {
-        return <City key={citie._id} name = {citie.name} imageUrl = {citie.imageUrl} country = {citie.countryName} />
+     { cities.map((citie, i) => {
+        return <City key={i}  id={citie._id} name = {citie.name} imageUrl = {citie.imageUrl} country = {citie.countryName} />
       })}
     </div>
   </div> ;
