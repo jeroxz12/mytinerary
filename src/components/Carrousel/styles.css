@@ -4,11 +4,25 @@ font-weight: 500;
 }
 .card-img-overlay{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    flex-direction: column;
+    
+}
+.card-title{
+    font-size: 4.5rem;
+}
+
+.card-text{
+    font-size: 2rem;
+}
+.carousel-item{
+    object-fit: cover;
 }
 .card-img{
     filter: opacity(0.7);
+    height: 400px;
+    object-fit: cover;
 }
 @media screen and (max-width: 1000px)  {
     .card-img{
