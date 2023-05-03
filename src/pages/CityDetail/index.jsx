@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import axios from 'axios';
 import 'animate.css';
 import './styles.css'
@@ -16,9 +16,9 @@ console.log(city)
     <div className="details_hero" id="details_hero" style={{  background: 'url(' + city.imageUrl + ')' }}>
       <div className="details_hero_content">
         <h2 className="details_hero_title">Welcome to {city.name}</h2>
-        <a href="#cardContainer" className="details_hero_button animate__animated animate__flash">
-            Explore ↓
-        </a>
+        <Link to={"https://www.google.com/maps/place/" + city.name} target='_blank' className="details_hero_button animate__animated animate__flash">
+            Explore in Maps
+        </Link>
       </div>
     </div>
     )
