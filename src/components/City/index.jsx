@@ -1,15 +1,51 @@
-import React from "react";
+//import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
-const City = (key, city) => {
 
-    return <div className="card" style={{width:'18rem'}} key="key">
-          <img src={city.imageUrl} className="card-img-top" alt="..."/>
-          <div className="card-body">
-            <h5 className="card-title">{city.name}</h5>
-            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-    </div>;
+// const City = (props) => {
+
+const City = ({pepito}) => {
+  
+  // let [data, setData]  = useState([]) 
+
+  // useEffect(()=>{
+  //   // setData(cities)
+  //    console.log(pepito)
+  // }, [])
+
+    return (
+      <>
+        {
+          pepito.map(city => {
+            return (
+              <div className="card card-list" key={city._id} >
+                <h1>{city.name}</h1>
+                <p>{city.countryName}</p>
+                <img src={city.imageUrl} alt="" />
+                <Link to={`/city/${city._id}`} >
+                  <button className="btn btn-success">
+                    ver mas...
+                  </button>
+                </Link>
+              </div>
+            )
+          })
+        }
+     </>)
 };
 
 export default City;
+
+
+ /*
+            {cities.map(city => {
+          return (
+            <div className="card">
+              <h1>{city.name}</h1>
+              <p>{city.countryName}</p>
+              <img src={city.imageUrl} alt="" />
+            </div>
+          )
+        })}
+     
+     */ 
