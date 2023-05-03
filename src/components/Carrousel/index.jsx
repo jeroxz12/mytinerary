@@ -99,7 +99,7 @@ const Carrousel = () => {
         //   </div>
         // </div> */}
           <div className="card bg-dark text-white">
-            <img
+            <image
               className="card-img"
               src={items[indice].imagenUrl}
               alt="Card image"
