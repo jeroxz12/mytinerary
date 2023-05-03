@@ -13,14 +13,20 @@ const CityDetail = () => {
   },[])
 console.log(city)
     return (
+      <>
+
+    <button className='btn btn-primary btn-sm align-self-start btn-back'><Link to={'/cities'} className='text-white text-decoration-none'>{"<- Volver"}</Link></button>
     <div className="details_hero" id="details_hero" style={{  background: 'url(' + city.imageUrl + ')' }}>
+
       <div className="details_hero_content">
+
         <h2 className="details_hero_title">Welcome to {city.name}</h2>
         <Link to={"https://www.google.com/maps/place/" + city.name} target='_blank' className="details_hero_button animate__animated animate__flash">
             Explore in Maps
         </Link>
       </div>
     </div>
+    </>
     )
 }
 export default CityDetail

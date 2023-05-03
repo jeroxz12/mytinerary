@@ -8,8 +8,8 @@ const CallToAction = ({ title, desc, cardId, link }) => {
       id={"card" + cardId}
     >
       <div className="card-body d-flex flex-column justify-content-center align-items-center">
-        <h5 className="card-title">{title}</h5>
-        <p className="card-text ">
+        <h5 className="card-title cta-card-title">{title}</h5>
+        <p className="card-text cta-card-text">
           <em>{desc}</em>
         </p>
         <Link className="btn btn-primary" to={link}>
