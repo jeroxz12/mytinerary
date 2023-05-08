@@ -4,9 +4,10 @@
   height: 60vh;
   top: 0;
   left: 0;
-  object-fit: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  /* object-fit: cover; */
+  background-size: cover!important;
+  background-repeat: no-repeat!important;
+  background-position: center center!important;
   filter: brightness(100%);
   display: flex;
   justify-content: center;

@@ -1,0 +1,24 @@
+.card-itinerary{
+    min-width: 100%;
+    min-height: 550px;
+}
+.card-body-itinerary{
+    height: 100%;
+}
+.card-text-itinerary{
+    font-size: 1.2rem;
+}
+
+.itinerary-card-title{
+    font-size: 2.2rem ;
+}
+
+.itinerary-card-author{
+font-size: 1.5rem;
+}
+.img-itinerary{
+width: 100% !important;
+height: 100%;
+object-fit: cover;
+}
+
