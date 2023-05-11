@@ -1,9 +1,11 @@
 .card-itinerary{
     min-width: 100%;
-    min-height: 550px;
+    min-height: 650px;
 }
 .card-body-itinerary{
     height: 100%;
+    background-color: aliceblue;
+
 }
 .card-text-itinerary{
     font-size: 1.2rem;
