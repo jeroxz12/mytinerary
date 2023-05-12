@@ -31,8 +31,8 @@ const Carrousel = () => {
               alt="Card image"
             />
             <div className="card-img-overlay  ">
-              <h5 className="card-title">{cities[indice].name}</h5>
-              <p className="card-text">{cities[indice].countryName}</p>
+              <h5 className="carousel_title">{cities[indice].name}</h5>
+              <p className="carousel_text">{cities[indice].countryName}</p>
             </div>
           </div>
         </div>

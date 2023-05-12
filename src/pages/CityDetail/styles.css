@@ -63,3 +63,15 @@ padding: 60px;
   align-items: center;
   justify-content: center;
 }
+@media  screen and (max-width: 768px) {
+  .container-itinerarys {
+    padding-left: 0;
+    margin-left: 0;
+      min-width: 80%;
+      min-height: 400px;
+      margin: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+  }
+}

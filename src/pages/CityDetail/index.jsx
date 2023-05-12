@@ -39,7 +39,7 @@ const CityDetail = () => {
             style={{ background: "url(" + city.imageUrl + ")"}}
           >
             <div className="details_hero_content">
-              <h2 className="details_hero_title">Welcome to {city.name}</h2>
+              <h2 className="details_hero_title animate__animated animate__backInDown">Welcome to {city.name}</h2>
               <Link
                 to={"https://www.google.com/maps/place/" + city.name}
                 target="_blank"
@@ -49,7 +49,7 @@ const CityDetail = () => {
               </Link>
             </div>
           </div>
-          <div className="container">
+          <div className="container container-itinerarys d-flex flex-column justify-content-center">
            { Object.entries(city).length > 0 && city.itineraries.length > 0  ? city.itineraries.map( (itinerary, id) => {
             return <Itinerary  key={id} itinerary = {itinerary} />
           }) :<h3 className="text-white text-center">Esta ciudad no tiene itinerarios para mostrar.</h3> } 

@@ -28,7 +28,7 @@ const Itinerary = ({ itinerary }) => {
     }
   }
   return (
-    <div className="card card-itinerary m-3 ">
+    <div className="card card-itinerary ">
   <div className="row g-0 h-100">
     <div className="col-md-4">
       <img src={itinerary.activities[0]} className="img-fluid rounded-start img-itinerary" alt="..."/>
